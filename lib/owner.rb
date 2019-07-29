@@ -34,5 +34,9 @@ class Owner
   def dogs
     Dog.all.find_all { |dog| dog.owner == self }
   end
+  
+  def buy_cat(cat)
+    Cat.newunless self.cats.include?(cat)
+  end
 
 end
