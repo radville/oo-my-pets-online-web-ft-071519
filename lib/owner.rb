@@ -39,8 +39,8 @@ class Owner
     Cat.new(cat, self) unless self.cats.include?(cat)
   end
   
-  def buy_cat(cat)
-    Cat.new(cat, self) unless self.cats.include?(cat)
+  def buy_dog(dog)
+    Dog.new(dog, self) unless self.dogs.include?(dog)
   end
 
 end
