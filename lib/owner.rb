@@ -36,7 +36,7 @@ class Owner
   end
   
   def buy_cat(cat)
-    Cat.newunless self.cats.include?(cat)
+    Cat.new(cat, self) unless self.cats.include?(cat)
   end
 
 end
