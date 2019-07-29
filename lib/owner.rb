@@ -42,5 +42,9 @@ class Owner
   def buy_dog(dog)
     Dog.new(dog, self) unless self.dogs.include?(dog)
   end
+  
+  def walk_dogs
+    self.dogs.map { |dog| dog.
+  end
 
 end
