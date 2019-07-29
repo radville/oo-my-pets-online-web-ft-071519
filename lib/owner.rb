@@ -24,5 +24,9 @@ class Owner
   def say_species
     "I am a #{species}."
   end
+  
+  def cats
+    Cat.all.detect { |cat| cat
+  end
 
 end
